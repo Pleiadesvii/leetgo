@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	solutions.Lc0343()
+	solutions.Lc0254()
 }
