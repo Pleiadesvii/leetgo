@@ -2,6 +2,7 @@ package com_leet_solutions
 
 import (
 	"fmt"
+	"math"
 )
 
 func Lc0254() {
@@ -21,7 +22,7 @@ func initLc254() int {
 
 func getFactors(n int) [][]int {
 	factors := [][]int {}
-	for i := 2; i <= n/2 ; i++ {
+	for i := 2; i <= int(math.Sqrt(float64(n))) ; i++ {
 		if checkTimeResult(n, i, n/i) {
 			f := []int {i, n/i}
 			factors = checkMonoAndAppend(factors, f)
